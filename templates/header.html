@@ -1,0 +1,31 @@
+<header id="header">
+    <!--menu begin-->
+    <div class="menu">
+      <nav class="nav" id="topnav">
+        <h1 class="logo"><a href="/index/">个人博客</a></h1>
+        <li><a href="/index/">网站首页</a> </li>
+        <li><a href="/list/">电影类别</a>
+          <ul class="sub-nav">
+            {% for ca in categorys%}
+              {% if forloop.counter <= 3%}
+                <li>{{ca.category}}</li>
+              {% endif%}
+            {% endfor%}
+          </ul>
+        </li>
+        <li><a href="/photo/">影片册</a>
+        </li>
+        <li><a href="/gbook/">留言</a> </li>
+        <li><a href="/about/">关于我</a> </li>
+        <li><a href="/release/">发表博客</a></li>
+      </nav>
+    </div>
+    <ul id="check_login">
+      <li>
+
+
+      </li>
+    </ul>
+
+
+  </header>
